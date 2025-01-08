@@ -1,0 +1,250 @@
+/* Style global */
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400&display=swap'); /* Gothic A1 */
+
+@font-face {
+    font-family: 'Code Pro Light', sans-serif;
+    src: url('fonts/Code-Pro-Light.otf') format('opentype'); /* Chemin vers la police locale */
+    font-weight: 300;
+    font-style: normal;
+}
+
+    body {
+    margin: 0;
+    font-family: 'Gothic A1', sans-serif; /* Police par défaut */
+    background-color: #FAEBD7; /* Beige clair */
+    -webkit-font-smoothing: antialiased; /* Chrome et Safari */
+    -moz-osx-font-smoothing: grayscale; /* Firefox */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px 0;
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings par défaut */
+    overflow-y: hidden; /* Supprime le défilement vertical */
+    height: 100vh; /* Hauteur totale égale à celle de la fenêtre */
+}
+
+html {
+    height: 100%; /* Ajuste également l'élément HTML */
+    overflow-y: hidden; /* Empêche le défilement vertical */
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.dollar-sign {
+    font-family: 'Gothic A1', sans-serif; /* Police identique à l'adresse */
+    font-size: .8rem; /* Taille similaire ou légèrement plus grande */
+    color: #555; /* Couleur similaire à l'adresse */
+    position: absolute;
+    top: 10px; /* Distance depuis le haut */
+    right: 20px; /* Distance depuis le bord droit */
+    font-weight: 400;
+}
+
+.dollar-sign a {
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: inherit; /* Utilise la couleur définie pour .dollar-sign */
+    display: inline-block; /* Assure un comportement sur tout le lien */
+    transition: all 0.2s ease-in-out; /* Ajoute une animation fluide */
+}
+
+.dollar-sign a:hover {
+    color: #000; /* Change la couleur à noir ou une autre plus visible */
+    transform: scale(1.2); /* Agrandit légèrement le symbole au survol */
+    transition: all 0.2s ease-in-out; /* Animation fluide */
+    opacity: 0.95; /* Légère transparence pour un effet subtil */
+}
+
+/* Logo */
+.logo {
+    width: 180px;
+    margin-bottom: 50px;
+    margin-left: 26px; /* Décale de 10px vers la droite */
+    transform: translateY(50px); /* Décale le logo de 20px vers le bas */
+    opacity: 0.7; /* Réduction de l'opacité pour un effet visuel plus fin */
+}
+
+/* Texte principal */
+.luxury-text {
+    font-family: 'Code Pro Light', sans-serif; /* Police locale */
+    font-size: 18pt;
+    margin: 0;
+    font-weight: 300; /* Utiliser le poids le plus léger */
+    _margin-bottom: -17px; /* Réduit l'espace en-dessous de LUXURY */
+    transform: translateY(20px);
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    opacity: 0.8; /* Réduction de l'opacité pour un effet visuel plus fin */
+}
+
+.blub-text {
+    font-family: 'Code Pro Light', sans-serif; /* Police locale */
+    font-size: 48pt;
+    font-weight: bold; /* Texte plus épais */
+    margin: 0;
+    font-weight: 300; /* Utiliser le poids le plus léger */
+    _margin-top: -17px; /* Réduit l'espace au-dessus de BLUB */
+    transform: translateY(40px);
+    transform: scale(1, 0.9); /* Écrase le texte verticalement */
+    letter-spacing: 1px; /* Espacement réduit */
+}
+
+.footer {
+    position: absolute; /* Positionner l'adresse à un endroit précis */
+    bottom: 10px; /* La fixer au bas de la fenêtre */
+    width: 100%; /* Étendre sur toute la largeur */
+    text-align: center; /* Centrer le contenu */
+    margin: 0;
+    padding: 30px 0; /* Optionnel : ajuster le padding pour une esthétique élégante */
+    background-color: transparent; /* Optionnel : aucune couleur de fond */
+}
+
+.header {
+    margin-top: 10px; /* Ajuste l'espacement depuis le haut */
+}
+
+.token-address {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 0.9rem; /* Taille de la police */
+    font-weight: 200; /* Poids léger pour un rendu fin */
+    color: #555; /* Couleur du texte */
+    display: flex; /* Aligner l'adresse et l'icône en ligne */
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Espacement entre le texte et l'icône */
+}
+
+.copy-icon {
+    width: 10px; /* Taille initiale */
+    height: auto;
+    margin-left: 10px;
+    cursor: pointer; /* Pointer pour indiquer l'interaction */
+    position: relative; /* Nécessaire pour le positionnement */
+    top: 45%; /* Ajusté pour le positionnement */
+    transform: translateY(-50%); /* Centre verticalement */
+    transition: transform 0.2s ease, opacity 0.2s ease; /* Animation fluide */
+}
+
+.copy-icon:hover {
+    opacity: 0.8; /* Effet de survol */
+    transform: translateY(-50%) scale(1.2); /* Combine les transformations */
+    transition: transform 0.2s ease, opacity 0.2s ease; /* Animation fluide */
+}
+
+
+_.social-link {
+    position: absolute; /* Position absolue */
+    bottom: 15px; /* Place le logo X juste au-dessus de l'adresse */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Ajuste le centrage */
+    margin-top: 0; /* Supprime les marges */
+}
+
+_.x-logo {
+    width: 30px; /* Taille du logo X */
+    height: auto; /* Garde les proportions */
+    cursor: pointer; /* Indique que le logo est cliquable */
+    transition: transform 0.2s ease-in-out; /* Animation fluide au survol */
+}
+
+_.x-logo:hover {
+    transform: scale(1.2); /* Agrandit légèrement le logo au survol */
+    opacity: 0.9; /* Effet de transparence */
+}
+
+.legal-notice {
+    font-size: 0.40rem; /* Taille de police plus petite */
+    color: #777; /* Couleur grise discrète */
+    text-align: center; /* Centre le texte */
+    margin-top: 0px; /* Espace au-dessus */
+    padding: 0px 0;
+    border-top: 0px solid #ddd; /* Ligne de séparation subtile */
+}
+
+_.legal-notice a {
+    color: #555; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    transition: color 0.2s ease-in-out;
+}
+
+_.legal-notice a:hover {
+    color: #000; /* Change la couleur au survol */
+}
+
+
+/* Responsive pour tablettes (largeur < 768px) */
+@media (max-width: 768px) {
+    .logo {
+        width: 140px; /* Réduit la taille du logo */
+    }
+
+    .luxury-text {
+        font-size: 1.6rem; /* Texte légèrement plus petit */
+        letter-spacing: 1.9px; /* Espacement réduit */
+        margin-bottom: 4px; /* Réduit l'espacement avec BLUB */
+    }
+
+    .blub-text {
+        font-size: 4rem; /* Réduit la taille de "BLUB" */
+        letter-spacing: 1.1px; /* Conserve la lisibilité */
+        margin-top: 4px; /* Ajoute un petit espace avec LUXURY */
+    }
+
+    .token-address {
+        font-size: 0.8rem; /* Adresse légèrement plus petite */
+    }
+
+    .x-logo {
+        width: 25px; /* Réduit la taille du logo X */
+    }
+}
+
+/* Responsive pour smartphones (largeur < 480px) */
+@media (max-width: 480px) {
+    .logo {
+        width: 150px; /* Réduit davantage le logo */
+    }
+
+    .luxury-text {
+        font-size: 2rem; /* Texte encore plus petit */
+        letter-spacing: 1.6px; /* Espacement réduit mais visible */
+        margin-bottom: 4px; /* Réduit l'espacement avec BLUB */
+    }
+
+    .blub-text {
+        font-size: 4.5rem; /* Taille réduite pour les petits écrans */
+        letter-spacing: 0.9px; /* Conserve la lisibilité sur petits écrans */
+        margin-top: 4px; /* Ajoute un petit espace avec LUXURY */
+    }
+
+    .header {
+        margin-top: 10px; /* Réduit l'espace au-dessus de LUXURY */
+    }
+
+    .token-address {
+        font-size: 0.7rem; /* Taille minimale pour l'adresse */
+        padding: 0 10px; /* Ajoute un padding pour éviter de toucher les bords */
+    }
+
+    .x-logo {
+        width: 25px; /* Plus petit pour les smartphones */
+    }
+
+    .social-link {
+    position: absolute; /* Change de "absolute" à "relative" */
+    justify-content: center; /* Centre horizontalement le contenu */
+    bottom: 10; /* Supprime le décalage vers le bas */
+    margin-top: 10px; /* Ajoute de l'espace au-dessus du logo X */
+    
+}
+
+
