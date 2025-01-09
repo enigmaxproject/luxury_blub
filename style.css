@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400&display=swap'); /* Gothic A1 */
 
 @font-face {
-    font-family: 'Code Pro Light', sans-serif;
-    src: url('fonts/Code-Pro-Light.otf') format('opentype'); /* Chemin vers la police locale */
+    font-family: 'Code Pro Light';
+    src: url('fonts/code-pro-light-webfont.woff2') format('woff2'),
+         url('fonts/code-pro-light-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
-    body {
+/* Exemple d'application de la police */
+body {
+    font-family: 'Code Pro Light', sans-serif;
+    font-weight: 300;
+    
     margin: 0;
     font-family: 'Gothic A1', sans-serif; /* Police par défaut */
     background-color: #FAEBD7; /* Beige clair */
