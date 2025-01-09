@@ -123,14 +123,20 @@ html, body {
 
 
 .token-address {
+    position: absolute; /* Place l'adresse à un endroit précis */
+    bottom: 40px; /* Ajuste la hauteur par rapport au bas de l'écran */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Corrige le centrage */
     font-family: 'Gothic A1', sans-serif;
     font-size: 0.9rem; /* Taille de la police */
-    font-weight: 200; /* Poids léger pour un rendu fin */
-    color: #555; /* Couleur du texte */
+    font-weight: 200; /* Poids léger */
+    color: #555; /* Couleur grise subtile */
     display: flex; /* Aligner l'adresse et l'icône en ligne */
     justify-content: center;
-    align-items: center;
-    gap: 5px; /* Espacement entre le texte et l'icône */
+    padding: 5px 10px; /* Ajoute de l'espace autour */
+    text-align: center;
+    _gap: 5px; /* Espacement entre le texte et l'icône */
+    z-index: 5; /* S'assure que ça ne chevauche pas d'autres éléments */
 }
 
 .copy-icon {
@@ -151,27 +157,41 @@ html, body {
 }
 
 
-_.social-link {
+.social-link {
     position: absolute; /* Position absolue */
     bottom: 15px; /* Place le logo X juste au-dessus de l'adresse */
     left: 50%; /* Centre horizontalement */
-    transform: translateX(-50%); /* Ajuste le centrage */
+    transform: translateX(-30%); /* Ajuste le centrage */
     margin-top: 0; /* Supprime les marges */
 }
 
-_.x-logo {
+.x-logo {
     width: 30px; /* Taille du logo X */
     height: auto; /* Garde les proportions */
     cursor: pointer; /* Indique que le logo est cliquable */
     transition: transform 0.2s ease-in-out; /* Animation fluide au survol */
 }
 
-_.x-logo:hover {
+.x-logo:hover {
     transform: scale(1.2); /* Agrandit légèrement le logo au survol */
     opacity: 0.9; /* Effet de transparence */
 }
 
 .legal-notice {
+    position: fixed; /* Fixer en bas de l'écran */
+    bottom: 0px; /* Place la mention juste au-dessus du bas */
+    text-align: center; /* Centre le texte */
+    _left: 50%; /* Centre horizontalement */
+    _transform: translateX(-50%); /* Corrige le centrage */
+    font-size: 0.4rem; /* Texte plus petit pour être discret */
+    color: #777; /* Couleur grise discrète */
+    text-align: center; /* Centre le texte */
+    _padding: 5px 10px; /* Optionnel : espace autour */
+    background-color: transparent; /* Aucune couleur de fond */
+    z-index: 1; /* Derrière les autres éléments */
+}
+
+._legal-notice {
     font-size: 0.40rem; /* Taille de police plus petite */
     color: #777; /* Couleur grise discrète */
     text-align: center; /* Centre le texte */
@@ -264,5 +284,3 @@ _.legal-notice a:hover {
     padding: 5px 0; /* Réduction du padding */
     }
 }
-
-
