@@ -5,15 +5,10 @@
     font-family: 'Code Pro Light';
     src: url('fonts/code-pro-light-webfont.woff2') format('woff2'),
          url('fonts/code-pro-light-webfont.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
 }
 
 /* Exemple d'application de la police */
 body {
-    font-family: 'Code Pro Light', sans-serif;
-    font-weight: 300;
-    
     margin: 0;
     font-family: 'Gothic A1', sans-serif; /* Police par défaut */
     background-color: #FAEBD7; /* Beige clair */
@@ -86,7 +81,7 @@ html {
     margin: 0;
     font-weight: 300; /* Utiliser le poids le plus léger */
     _margin-bottom: -17px; /* Réduit l'espace en-dessous de LUXURY */
-    transform: translateY(20px);
+    transform: translateY(25px);
     letter-spacing: 2px; /* Espacement entre les lettres */
     opacity: 0.8; /* Réduction de l'opacité pour un effet visuel plus fin */
 }
