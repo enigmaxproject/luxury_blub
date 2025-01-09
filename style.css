@@ -92,7 +92,7 @@ html {
     font-weight: bold; /* Texte plus épais */
     margin: 0;
     font-weight: 300; /* Utiliser le poids le plus léger */
-    _margin-top: 20px; /* Réduit l'espace au-dessus de BLUB */
+    margin-top: 20px; /* Réduit l'espace au-dessus de BLUB */
     transform: translateY(50px);
     transform: scale(1, 0.9); /* Écrase le texte verticalement */
     letter-spacing: 1px; /* Espacement réduit */
