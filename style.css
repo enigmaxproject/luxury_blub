@@ -5,6 +5,7 @@
     font-family: 'Code Pro Light';
     src: url('fonts/code-pro-light-webfont.woff2') format('woff2'),
          url('fonts/code-pro-light-webfont.woff') format('woff');
+
 }
 
 /* Exemple d'application de la police */
@@ -21,7 +22,7 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
-    padding: 20px 0;
+    padding: 0px 0;
     margin: 0; /* Supprime les marges par défaut */
     padding: 0; /* Supprime les paddings par défaut */
     overflow-y: hidden; /* Supprime le défilement vertical */
@@ -71,7 +72,7 @@ html {
     margin-bottom: 50px;
     margin-left: 25px; /* Décale de 10px vers la droite */
     transform: translateY(50px); /* Décale le logo de 20px vers le bas */
-    opacity: 0.7; /* Réduction de l'opacité pour un effet visuel plus fin */
+    opacity: 0.75; /* Réduction de l'opacité pour un effet visuel plus fin */
 }
 
 /* Texte principal */
@@ -99,17 +100,24 @@ html {
 }
 
 .footer {
-    position: absolute; /* Positionner l'adresse à un endroit précis */
-    bottom: 10px; /* La fixer au bas de la fenêtre */
+    position: absolute /* Positionner l'adresse à un endroit précis */
+    bottom: 0px; /* La fixer au bas de la fenêtre */
     width: 100%; /* Étendre sur toute la largeur */
     text-align: center; /* Centrer le contenu */
     margin: 0;
-    padding: 30px 0; /* Optionnel : ajuster le padding pour une esthétique élégante */
+    padding: 20px 0; /* Optionnel : ajuster le padding pour une esthétique élégante */
     background-color: transparent; /* Optionnel : aucune couleur de fond */
+    z-index: 10; /* S'assurer qu'il reste au-dessus d'autres éléments */
 }
 
 .header {
-    margin-top: 10px; /* Ajuste l'espacement depuis le haut */
+    _margin-top: 10px; /* Ajuste l'espacement depuis le haut */
+    flex: 1; /* Prend tout l'espace disponible sans dépasser */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrer verticalement */
+    text-align: center;
 }
 
 .token-address {
@@ -184,17 +192,17 @@ _.legal-notice a:hover {
 /* Responsive pour tablettes (largeur < 768px) */
 @media (max-width: 768px) {
     .logo {
-        width: 140px; /* Réduit la taille du logo */
+        width: 150px; /* Réduit la taille du logo */
     }
 
     .luxury-text {
-        font-size: 1.6rem; /* Texte légèrement plus petit */
+        font-size: 1.8rem; /* Texte légèrement plus petit */
         letter-spacing: 1.9px; /* Espacement réduit */
         margin-bottom: 4px; /* Réduit l'espacement avec BLUB */
     }
 
     .blub-text {
-        font-size: 4rem; /* Réduit la taille de "BLUB" */
+        font-size: 3.5rem; /* Réduit la taille de "BLUB" */
         letter-spacing: 1.1px; /* Conserve la lisibilité */
         margin-top: 4px; /* Ajoute un petit espace avec LUXURY */
     }
@@ -205,23 +213,26 @@ _.legal-notice a:hover {
 
     .x-logo {
         width: 25px; /* Réduit la taille du logo X */
+      
+    .footer {
+        padding: 15px 0; /* Réduction du padding du footer */
     }
 }
 
 /* Responsive pour smartphones (largeur < 480px) */
 @media (max-width: 480px) {
     .logo {
-        width: 150px; /* Réduit davantage le logo */
+        width: 120px; /* Réduit davantage le logo */
     }
 
     .luxury-text {
-        font-size: 2rem; /* Texte encore plus petit */
+        font-size: 1.5rem; /* Texte encore plus petit */
         letter-spacing: 1.6px; /* Espacement réduit mais visible */
         margin-bottom: 4px; /* Réduit l'espacement avec BLUB */
     }
 
     .blub-text {
-        font-size: 4.5rem; /* Taille réduite pour les petits écrans */
+        font-size: 3rem; /* Taille réduite pour les petits écrans */
         letter-spacing: 0.9px; /* Conserve la lisibilité sur petits écrans */
         margin-top: 4px; /* Ajoute un petit espace avec LUXURY */
     }
@@ -244,7 +255,8 @@ _.legal-notice a:hover {
     justify-content: center; /* Centre horizontalement le contenu */
     bottom: 10; /* Supprime le décalage vers le bas */
     margin-top: 10px; /* Ajoute de l'espace au-dessus du logo X */
-    
+
+    .footer {
+        padding: 10px 0; /* Ajustement du padding */
+    }
 }
-
-
