@@ -260,13 +260,6 @@ _.legal-notice a:hover {
         width: 25px; /* Plus petit pour les smartphones */
     }
 
-    .social-link {
-    position: absolute; /* Change de "absolute" à "relative" */
-    justify-content: center; /* Centre horizontalement le contenu */
-    bottom: 10; /* Supprime le décalage vers le bas */
-    margin-top: 10px; /* Ajoute de l'espace au-dessus du logo X */
-    }
-
     .footer {
     padding: 5px 0; /* Réduction du padding */
     }
