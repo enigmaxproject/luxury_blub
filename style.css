@@ -85,7 +85,7 @@ html {
     font-size: 18pt;
     margin: 0;
     font-weight: 300; /* Utiliser le poids le plus léger */
-    _margin-bottom: -17px; /* Réduit l'espace en-dessous de LUXURY */
+    _margin-bottom: -10px; /* Réduit l'espace en-dessous de LUXURY */
     transform: translateY(20px);
     letter-spacing: 2px; /* Espacement entre les lettres */
     opacity: 0.8; /* Réduction de l'opacité pour un effet visuel plus fin */
