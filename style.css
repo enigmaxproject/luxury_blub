@@ -183,7 +183,7 @@ html, body {
 .question-mark {
     position: fixed; /* Fixe le point à l'écran */
     bottom: 10px; /* Positionne à 10px du bas */
-    right: 10px; /* Positionne à 10px du bord droit */
+    right: 15px; /* Positionne à 10px du bord droit */
     font-family: 'Gothic A1', sans-serif;
     font-size: .4rem;
     color: #555;
