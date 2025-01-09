@@ -62,6 +62,7 @@ html, body {
     top: 10px; /* Distance depuis le haut */
     right: 20px; /* Distance depuis le bord droit */
     font-weight: 400;
+    z-index: 1000; /* Assure qu'il est au-dessus des autres éléments */
 }
 
 .dollar-sign a {
@@ -69,6 +70,7 @@ html, body {
     color: inherit; /* Utilise la couleur définie pour .dollar-sign */
     display: inline-block; /* Assure un comportement sur tout le lien */
     transition: all 0.2s ease-in-out; /* Ajoute une animation fluide */
+    cursor: pointer; /* Montre que c'est cliquable */
 }
 
 .dollar-sign a:hover {
@@ -177,6 +179,36 @@ html, body {
     opacity: 0.9; /* Effet de transparence */
 }
 
+
+.question-mark {
+    position: fixed; /* Fixe le point à l'écran */
+    bottom: 10px; /* Positionne à 10px du bas */
+    right: 10px; /* Positionne à 10px du bord droit */
+    font-family: 'Gothic A1', sans-serif;
+    font-size: .4rem;
+    color: #555;
+    z-index: 100; /* Assure qu'il est au-dessus des autres éléments */
+    margin: 0; /* Supprime toute marge héritée */
+    padding: 0; /* Supprime tout padding hérité */
+    text-align: unset; /* Désactive tout alignement centré hérité */
+}
+
+
+.question-mark a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+
+.question-mark a:hover {
+    color: #000;
+    transform: scale(1.2);
+    opacity: 0.95;
+    transition: all 0.2s ease-in-out;
+}
+
+
 .legal-notice {
     position: fixed; /* Fixer en bas de l'écran */
     bottom: 0px; /* Place la mention juste au-dessus du bas */
@@ -209,6 +241,13 @@ _.legal-notice a {
 _.legal-notice a:hover {
     color: #000; /* Change la couleur au survol */
 }
+
+
+
+
+
+
+
 
 
 /* Responsive pour tablettes (largeur < 768px) */
@@ -284,3 +323,5 @@ _.legal-notice a:hover {
     padding: 5px 0; /* Réduction du padding */
     }
 }
+
+
