@@ -185,7 +185,7 @@ html, body {
     bottom: 10px; /* Positionne à 10px du bas */
     right: 15px; /* Positionne à 10px du bord droit */
     font-family: 'Gothic A1', sans-serif;
-    font-size: .2rem;
+    font-size: .3rem;
     color: #555;
     z-index: 100; /* Assure qu'il est au-dessus des autres éléments */
     margin: 0; /* Supprime toute marge héritée */
