@@ -1,7 +1,7 @@
 {
   "name": "Luxury Blub",
   "symbol": "LBLB",
-  "image": "https://www.luxuryblub.io/json/Blub_Sticker_256px.png",
+  "image": "https://github.com/enigmaxproject/luxury_blub/blob/main/json/Blub_Sticker_256px.png",
   "description": "A luxury-themed meme token with a touch of blub humor.",
   "extensions": {
     "website": "https://www.luxuryblub.io/",
