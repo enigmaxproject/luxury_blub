@@ -1,6 +1,20 @@
 {
   "name": "Luxury Blub",
   "symbol": "LBLB",
-  "description": "Example token from Solana Making a Token guide.",
-  "image": "https://www.luxuryblub.io/json/Blub_Sticker_256px.png"
+  "image": "https://www.luxuryblub.io/json/Blub_Sticker_256px.png",
+  "description": "A luxury-themed meme token with a touch of blub humor.",
+  "extensions": {
+    "website": "https://www.luxuryblub.io/",
+    "twitter": "https://x.com/LuxuryBlub",
+    "_telegram": ""
+  },
+  "tags": [
+    "Meme",
+    "Whale",
+    "Blub"
+  ],
+  "_creator": {
+    "_name": "Luxury Blub Team",
+    "_site": "https://x.com"
+  }
 }
