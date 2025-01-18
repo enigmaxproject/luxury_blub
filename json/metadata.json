@@ -1,22 +1,7 @@
 {
-  "name": "Luxury Blub",
-  "symbol": "LUXB",
-  "image": "https://raw.githubusercontent.com/enigmaxproject/luxury_blub/refs/heads/main/json/Blub_Sticker_256px.png",
-  "description": "A luxury-themed meme token with a touch of blub humor.",
-  "extensions": {
-    "website": "https://www.luxuryblub.io/",
-    "twitter": "https://x.com/LuxuryBlub",
-    "_telegram": ""
-  },
-  "tags": [
-    "Meme",
-    "Luxury",
-    "Whale",
-    "Blub"
-  ],
-  "_creator": {
-    "_name": "Luxury Blub Team",
-    "_site": "https://x.com"
-  }
-}
+  "name": "test",
+  "symbol": "test",
+  "image": "",
+  "description": "",
+
 
