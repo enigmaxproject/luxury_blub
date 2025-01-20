@@ -3,7 +3,8 @@
     "symbol": "LUXLB",
     "image": "https://www.luxuryblub.io/json/Blub_Sticker_256px.png",
     "description": "A luxury-themed meme token with a touch of blub humor.",
-    "extensions": {
+    "uri": "https://www.luxuryblub.io/json/metadata.json",
+    "metadata": {
       "website": "https://www.luxuryblub.io/",
       "twitter": "https://x.com/LuxuryBlub",
       "_telegram": ""
